@@ -47,8 +47,8 @@
 		      Element rootElem = doc.getDocumentElement();
 
 		      String id = rootElem.getAttribute("Id");
-		      // String creationDate = rootElem.getAttribute("CreationDate");
-		      String creationDate = rootElem.getAttribute("Date"); //for Badges
+		      String creationDate = rootElem.getAttribute("CreationDate");
+		      // String creationDate = rootElem.getAttribute("Date"); //for Badges
 
 					data.set(creationDate.split("T")[0]);
 		    	context.write(data, one);
